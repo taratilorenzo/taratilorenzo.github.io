@@ -1,31 +1,24 @@
 header img {
+    grid-row: 1;
     border-style: groove;
+    margin: 2px 2px 2px 2px;
+    padding: 2px 2px 2px 2px;
+
 }
 
 header h1 {
     color: white;
     font-size: 3.5em;
+    
 }
 
 header {
+    display: grid;
+    grid-template-columns: 200px 100%;
     background-color: black;
-    grid-row: 0/1;
 }
 
 main h1 {
     color:black;
     font-size: 3em;
-}
-
-main{
-    grid-row: 1/2;
-}
-
-footer{
-    grid-row: 2/3;
-}
-
-body {
-    display:block;
-    grid-template-rows: 150px 300px 100px;
 }
