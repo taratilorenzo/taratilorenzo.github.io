@@ -1,26 +1,31 @@
+header img {
+    border-style: groove;
+}
+
 header h1 {
-    color: #0076bb
+    color: white;
+    font-size: 3.5em;
 }
 
-nav ul li {
-    float: left;
-    list-style-type: none;
-}
-
-nav ul li a {
-    display: block;
-    padding: .5rem 1rem;
-    background-color: orange;
+header {
+    background-color: black;
+    grid-row: 0/1;
 }
 
 main h1 {
-    clear: both;
+    color:black;
+    font-size: 3em;
 }
 
-main img {
-    float: right;
+main{
+    grid-row: 1/2;
 }
 
 footer{
-    text-align: center;
+    grid-row: 2/3;
+}
+
+body {
+    display:block;
+    grid-template-rows: 150px 300px 100px;
 }
