@@ -1,3 +1,7 @@
+body {
+    width: 550px;
+}
+
 header img {
     grid-row: 1;
     border-style: groove;
@@ -8,17 +12,25 @@ header img {
 
 header h1 {
     color: white;
-    font-size: 3.5em;
-    
+    font-size: 2em;
+    margin-left: 100px;
+
 }
 
 header {
     display: grid;
     grid-template-columns: 200px 100%;
     background-color: black;
+    align-content: center;
 }
 
 main h1 {
     color:black;
-    font-size: 3em;
+    font-size: 2.5em;
+}
+
+footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
 }
