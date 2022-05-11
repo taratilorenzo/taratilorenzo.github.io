@@ -1,0 +1,7 @@
+@media only screen and (min-width: 1028px) {
+
+    header, footer, nav, main {max-width: 75rem; margin: auto;}
+
+    main {grid-template-columns: 1fr 1fr 1fr;}
+    .principle3 {grid-column: span 1;}
+}
