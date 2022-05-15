@@ -11,6 +11,9 @@ body {
     font-family: Verdana, sans-serif;
 }
 
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+}
 
 /*----------- HEADER --------------*/
 header {
@@ -58,6 +61,48 @@ nav ul li.active a {
 main {
     padding: 0 2%;
     min-height: 10rem;
+}
+
+.palette table{
+    width: 100%;
+    border: 1px solid #000;
+    padding: .1rem;
+}
+
+.palette th, td{
+    border: 1px solid #000;
+}
+
+.palette table td {
+    text-align: center;
+}
+
+.palette table tr td.primary{
+    background-color: #0d0e0c;
+    color: #ddd;
+}
+.palette table tr td.secondary{
+    background-color: #fbfcfc;
+    color: #000;
+}
+.palette table tr td.accent1{
+    background-color: #25231c;
+    color: #ddd;
+}
+.palette table tr td.accent2{
+    background-color: #f7f7f1;
+    color: #000;
+}
+
+.typography table {
+    width: 100%;
+    border: 1px solid #000;
+    padding: .1rem;
+}
+
+.typography table th, td {
+    text-align: center;
+    border: 1px solid #000;
 }
 
 
