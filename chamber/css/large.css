@@ -1,0 +1,32 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+
+    .navigation button {
+        display: none;
+    }
+
+    .grid-header .social {
+        flex-direction: column;
+        grid-column: 4;
+        grid-row: 1;
+    }
+
+    .grid-header .social img {
+        padding-bottom: .2rem;
+    }
+
+    .grid-header .navigation {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    .grid-header .navigation ul#primaryNav {
+        display: flex;
+
+    }
+
+    .navigation ul li a {
+        border: none;
+    }
+
+} /*end large */
