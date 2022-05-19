@@ -24,4 +24,7 @@
     display: none;
 }
 
+.bottom-footer {
+    flex-direction: column;
+}
 } /* end of media query */

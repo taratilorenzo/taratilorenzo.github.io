@@ -52,5 +52,9 @@
         grid-row: 5;
     }
 
+    /* ------------ */
+    .bottom-footer {
+        display: flex;
+    }
         
 } /* end of media query */

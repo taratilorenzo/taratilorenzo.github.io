@@ -69,16 +69,15 @@ header {
     display: grid;
     gap: 20px;
     grid-template-areas: 
-        "logo name navigation icons"
-        "date date date       date";
+        "name navigation icons"
+        "date date       date";
     background-color: var(---background);
     padding: .8rem;
     align-items: center;
 }
 
-header.logo {grid-area: logo; width: 80px;}
+.name {grid-area: name; justify-self: left; display: grid; grid-template-columns: 100px 1fr;}
 
-.name {grid-area: name; justify-self: left;}
 .main-nav {grid-area: navigation;}
 .icons {grid-area: icons;}
 
@@ -143,15 +142,13 @@ footer {
     display: grid;
     gap: 20px;
     grid-template-areas:
-        "logo         nameaddress contact"
-        "bottomfooter bottomfooter bottomfooter";
+        "nameaddress contact"
+        "bottomfooter bottomfooter";
     padding: .8rem;
     background-color: var(---background);
     align-items: center;
 }
-
-footer.logo {grid-area: logo; width: 100px;}
-.name-address {grid-area: nameaddress;}
+.name-address {grid-area: nameaddress; display: grid; grid-template-columns: 80px 1fr;}
 .name-address h2 {margin-bottom: 0;}
 .name-address p {padding: 0; margin: 0;}
 .contact {
@@ -170,7 +167,7 @@ footer.logo {grid-area: logo; width: 100px;}
     display: grid;
     gap: 20px;
     padding: 0.8rem;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, auto));
 }
 
 .author {
