@@ -1,6 +1,27 @@
 /* 35em is also 560px (if basefont is 16px) */
-@media only screen and (max-width: 35rem){
+@media only screen and (max-width: 35rem){    
 
-    
-        
-    } /* end of media query */
+.event {
+    grid-row: 2;
+    grid-column: span 4;
+}
+
+.current-weather {
+    grid-row:3;
+    grid-column: 1 / 5;
+}
+
+.news-release {
+    grid-row: 4;
+} 
+
+.spotlight {
+    flex-direction: column;
+    grid-row: 5;
+} 
+
+.join {
+    display: none;
+}
+
+} /* end of media query */
