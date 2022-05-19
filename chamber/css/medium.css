@@ -1,5 +1,25 @@
-/* 35rem is also 560px when basefont is 16px */
-@media only screen and (min-width: 35rem) {
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (max-width: 64rem) {
 
+    /* -----------NAVIGATION BAR---------- */
+    .main-nav ul {
+        display: none;
+    }
 
-} /*end medium */
+    .main-nav ul.open {display: block;}
+    #hamburger-btn {display: block;}
+    #hamburger-btn span:nth-child(2) {display: none;}
+
+    #hamburger-btn.open span:nth-child(1) {display: none;}
+    #hamburger-btn.open span:nth-child(2) {display: block;}
+    
+    /* -----------HEADER---------- */
+    header {
+        grid-template-areas: 
+            "logo name icons navigation"
+            "date date date       date";
+    }
+    .icons {width: 50px;}
+
+        
+} /* end of media query */

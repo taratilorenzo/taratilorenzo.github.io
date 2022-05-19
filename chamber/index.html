@@ -1,69 +1,103 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="design principle assignment">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/small.css" rel="stylesheet">
-    <link href="css/medium.css" rel="stylesheet">
-    <link href="css/large.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <title>Home: Chamber of Commerce</title>
-  </head>
- 
-  <body>
-    <!--HEADER-->
-    <header>
-        <div class="grid-header">
-        <img class="logo" src="images/logo.png" alt="koru">
-        <div class="company">
-            <h1 class="name">Carpentry Chamber of Commerce</h1>
-            <h2 class="slogan">Let's build it Together</h2>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://kit.fontawesome.com/5b920e0e6d.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <title>Home</title>
+</head>
+
+<body class="wrapper">
+
+  <!-- HEADER -->
+  <header>
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7.1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3.3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7.1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>
+    <div class="name">
+      <h1>Carpenter</h1>
+      <h2>Chamber of Commerce</h2>
+    </div>
+    <div class="icons">
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-4x"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-4x"></i></a>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <button id="hamburger-btn"><span>&#9776;</span><span>X</span></button>
+      <ul id="primary-nav">
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <span id="currentdate"></span>
+
+  </header>
+
+  <main>
+    <h1 class="page-title">Page title matching the nav</h1>
+    <section class="grid-boxes">
+      <div class="event">
+        <h2>Event</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
+      </div>
+      <div class="current-weather">
+        <h2>Current Weather</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
+      </div>
+      <div class="join">
+        <h2>Join</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
+      </div>
+      <div class="hero">
+        <h2>Hero</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
+      </div>
+      <div class="news-release">
+        <h2>News Release</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aperiam assumenda reiciendis qui est rerum doloremque eum praesentium quaerat minima!</p>
+      </div>
+      <div class="spotlight">
+        <div class="spotlight-1">
+          <h2>Spotlight 1</h2>
+          <img src="images/" alt="spotlight1">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
         </div>
-        <div class="social">
-            <img src="https://byui-cit.github.io/wdd130/images/icons/color/facebook.png" alt="Facebook page">
-            <img src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="twitter Page">
+        <div class="spotlight-2">
+          <h2>Spotlight 2</h2>
+          <img src="images/" alt="spotlight2">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, laudantium!</p>
         </div>
+      </div>
+    </section>
+  </main>
 
-        <!--NAVIGATION-->
-        <nav class="navigation">
-            <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
-            <ul id="primaryNav">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="discover.html">Discover</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="Contact">Contact</a></li>
-            </ul>
-        </nav>
-        <p class="todaysdate"> 15 July 2022</p>
-        </div>
+  <footer>
+    <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7.1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3.3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7.1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>
+    <div class="name-address">
+      <h2>Carpenter Chamber of Commerce</h2>
+      <p class="address">Address line 1 <br>City, State Zip</p>
+    </div>
+    <div class="contact">
+      <a href="mailto:carpentercc@ggle.com">carpentercc@ggle.com</a>
+      <a href="tel:+642589654">(+64)2589654</a>
+      <a href="https://www.google.co.nz/maps/"><i class="fa-solid fa-map-pin"></i>Site Map</a>
+    </div>
+    <section class="bottom-footer">
+      <p>&copy; <span id="yeartodate"></span> Carpenter Chamber</p>
+      <p class="author">Lorenzo J. Tarati</p>
+      <p>WDD 230 Project</p>
+      <p>Last Modified: <span id="lastmodifieddate"></span></p>
+    </section>
+  </footer>
 
-        
-    </header>
-
-    <!--MAIN-->
-    <main>
-        <h1>Build, Builders, Buildings</h1>
-        <div class="event"><h2>Event</h2></div>
-        <div class="currentweather"><h2>Current Weather</h2></div>
-        <div class="join"><h2>Join</h2></div>
-        <div class="hero"><h2>Hero</h2></div>
-        <div class="newsrelease"><h2>News Release</h2></div>
-        <div class="spotlight1"><h2>Spotlight 1</h2></div>
-        <div class="spotlight2"><h2>Spotlight 2</h2></div>
-        <div class="action"><button>Join now</button></div>
-    </main>
-
-    <!--FOOTER-->
-    <footer>
-        <img src="images/log.png" alt="Koru">
-      &copy; <span id="yeartodate"></span> | Lorenzo Tarati | New Zealand
-      <br>Last Updated: <span id="todaysdate"></span>
-    </footer>
-    <script src="js/scripts.js"></script>
-  </body>
+  <script src="js/scripts.js"></script>
+  
+</body>
 </html>
