@@ -1,60 +1,23 @@
-/* 64em is also 1028px when basefont is 16px */
-@media only screen and (max-width: 64rem) {
+/* 35em is also 560px (if basefont is 16px) */
+@media only screen and (min-width: 35rem) {
 
-    /* -----------NAVIGATION BAR---------- */
-    .main-nav ul {
-        display: none;
-    }
 
-    .main-nav ul.open {display: block;}
-    #hamburger-btn {display: block;}
-    #hamburger-btn span:nth-child(2) {display: none;}
-
-    #hamburger-btn.open span:nth-child(1) {display: none;}
-    #hamburger-btn.open span:nth-child(2) {display: block;}
+    /*----------- BODY --------------*/
     
-    /* -----------HEADER---------- */
-    header {
-        grid-template-areas: 
-            "logo name icons navigation"
-            "date date date       date";
-    }
-
-    /* ------------MAIN--------- */
-    .hero {
-        grid-column: 1 / -1;
-        grid-row: 1;
-    } 
     
-    .news-release {
-        grid-column: 1 / -1;
-        grid-row: 2;
-    } 
     
-    .spotlight {
-        grid-column: 1 / -1;
-        grid-row: 3;
-        display: flex;
-    } 
+    /*----------- HEADER --------------*/
     
-    .join {
-        grid-column: 1 / -1;
-        grid-row: 4;
-    }
+    
+    
+    /*----------- NAVIGATION --------------*/
 
-    .event {
-        grid-column: 1 / -2;
-        grid-row: 5;
-    }
-
-    .current-weather {
-        grid-column: -2 / -1;
-        grid-row: 5;
-    }
-
-    /* ------------ */
-    .bottom-footer {
-        display: flex;
-    }
+    
+    
+    /*----------- MAIN --------------*/
+    
+    
+    
+    /*----------- FOOTER --------------*/
         
 } /* end of media query */
