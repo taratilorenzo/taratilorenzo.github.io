@@ -1,23 +1,26 @@
 // Declaration of my variables
+const myInput = document.querySelector("#favchap");
+const myBtn = document.querySelector(".input button");
+const myList = document.querySelector(".list");
 
-document.querySelector("#addchap").addEventListener("click", function() {
-    const userInput = document.querySelector("#favchap").value;
-    if (userInput !== ""){
-        //create the X button
-        const newBtn = document.createElement("button");
-        newBtn.innerHTML = "\u274C";
+// Adding chaper on our list with a "X" button
+myBtn.addEventListener("click", ()=>{
+    if(myInput.value != ""){
+        const myLi = document.createElement("li");
+        myLi.innerHTML = myInput.value;
+        const closeBtn = document.createElement("button");
+        closeBtn.innerHTML = "\u274c";
+        myLi.appendChild(closeBtn);
+        myList.appendChild(myLi);
+        closeBtn.addEventListener("click", ()=>{
+            myList.removeChild(myLi)
+        });
 
-        const newLI = document.createElement("li");
-        newLI.textContent = userInput;
-        newLI.appendChild(newBtn);
-
-    document.querySelector(".list").appendChild(newLI);
-
-    document.querySelector("#favchap").value = "";
-    } //End of the If statement
+    }
+    
+    //Empty the input 
+    myInput.value = "";
+    // focus back on the input
+    myInput.focus();
 });
 
-
-document.querySelector(".list").addEventListener("click", function(event) {
-    this.removeChild(event.target);
-});
