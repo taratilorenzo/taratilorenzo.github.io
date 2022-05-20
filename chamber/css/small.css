@@ -2,8 +2,8 @@
 :root {
     --primary: #0d0e0c;
     --light: #fbfcfc;
-    --accent1: #25231c;
-    ---background: #f7f7f1;
+    --darkbackground1: #25231c;
+    --lightbackground: #ccc;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
 }
 
@@ -32,16 +32,154 @@ body {
 /* ------------- BODY ------------- */
 .wrapper {
     display: grid;
-    grid-template-areas: 
+    grid-template-areas:
         "HEADER"
         "MAIN"
         "FOOTER";
+    gap: 1.25rem;
 }
+
+header, main, footer {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+header{grid-area: HEADER; background-color: var(--lightbackground);}
+main{grid-area: MAIN;}
+footer{grid-area: FOOTER; background-color: var(--lightbackground);}
+/* ---------------------------------- */
 
 /* ------------ NAVIGATION ----------- */
 .main-nav ul {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    /* gap: 1.25rem; */
+    padding: 0;
+    background-color: var(--darkbackground1);
+    list-style-type: none;
+    justify-items: center;
+}
+
+.main-nav a {
+    color: var(--light);
+    text-decoration: none;
+    display: block;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    /* box-shadow: var(--shadow); */
+}
+
+.main-nav a:hover {
+    color: var(--darkbackground1);
+    background-color: var(--light);
+    font-weight: bolder;
+}
+
+.active a{
+    color: var(--primary);
+    background-color: var(--light);
+    font-weight: bolder;
+}
+
+#hamburger-btn {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--light);
+    background-color: var(--darkbackground1);
+    width: 100%;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+/* JS toggle the menu navigation bar */
+#primary-nav {display: none;}
+#primary-nav.open {display: block;}
+#hamburger-btn span:nth-child(1) {display: block;}
+#hamburger-btn span:nth-child(2) {display: none;}
+#hamburger-btn.open span:nth-child(1) {display: none;}
+#hamburger-btn.open span:nth-child(2) {display: block;}
+/* --------------------------------------------------- */
+
+/* -----------------HEADER---------------- */
+header {
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 1.25rem;
-    padding: 0.2rem;
+    padding: 0.8rem;
+}
+
+.chamber {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 1.25rem;
+    
+}
+
+.chamber h1, .chamber h2 {
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.chamber h2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#currentdate {
+    font-size: 1.2rem;
+    padding: 00.8rem;
+    text-align: center;
+    color: var(--light);
+    background-color: var(--darkbackground1);
+}
+/* ----------------------------------------- */
+
+/* ------------------MAIN------------------ */
+.grid-boxes {
+    display: grid;
+    gap: 1.25rem;
+    border: 1px solid var(--primary);
+    padding: 0.8rem;
+}
+
+.grid-boxes div:nth-child(1){border: 1px solid var(--primary);}
+.grid-boxes div:nth-child(2){border: 1px solid var(--primary);}
+.grid-boxes div:nth-child(3){border: 1px solid var(--primary);}
+.grid-boxes div:nth-child(4){border: 1px solid var(--primary);}
+.grid-boxes div:nth-child(5){border: 1px solid var(--primary);}
+/* -------------------------------------------- */
+
+/* ------------FOOTER------------------ */
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    text-align: center;
+}
+
+.name-address .logo {
+    width: 80px;
+    
+}
+
+.name-address h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.name-address p {
+    padding: 0;
+    margin-top: 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact a{
+    text-decoration: none;
+    color: var(--primary)
 }
