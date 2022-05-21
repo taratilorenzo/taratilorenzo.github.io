@@ -86,11 +86,11 @@ main {
     color: #000;
 }
 .palette table tr td.accent1{
-    background-color: #25231c;
+    background-color: #383F31;
     color: #ddd;
 }
 .palette table tr td.accent2{
-    background-color: #f7f7f1;
+    background-color: #25231c;
     color: #000;
 }
 

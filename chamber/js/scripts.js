@@ -27,3 +27,10 @@ for(let i=0; i<navSelected.length; i++){
         pageTitle.innerHTML = navSelected[i].textContent.toUpperCase();
     });
 }
+
+// banner display on mondays and tuesdays only
+const today = new Date();
+const myBanner = document.querySelector(".banner-container");
+if(today.getDay() == 1 || today.getDay() == 2){
+    myBanner.style.display = "block";
+} 
