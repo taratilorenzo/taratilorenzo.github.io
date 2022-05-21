@@ -9,20 +9,23 @@
 
 html {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--primary);
     font-size: 16px;
 }
 
 html p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Lexend', sans-serif;
     font-size: 16px;
 }
+
+
 
 body {
     margin: 30px 50px;
     line-height: 1.4;
 }
+
+h1, h2, h3 {font-family: 'Merriweather', serif;}
 
  img { 
     /* images uses the whole space of its container */
