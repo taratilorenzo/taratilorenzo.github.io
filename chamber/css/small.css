@@ -63,6 +63,14 @@ footer{grid-area: FOOTER; background-color: var(--lightbackground);}
     justify-items: center;
 }
 
+.main-nav a.active{
+    background-color: var(--lightbackground);
+    color: var(--primary);
+    border-left:10px solid var(--light);
+    border-right:10px solid var(--light);
+    box-sizing: var(--shadow);
+}
+
 .main-nav a {
     color: var(--light);
     text-decoration: none;
@@ -75,12 +83,6 @@ footer{grid-area: FOOTER; background-color: var(--lightbackground);}
 
 .main-nav a:hover {
     color: var(--darkbackground1);
-    background-color: var(--light);
-    font-weight: bolder;
-}
-
-.active a{
-    color: var(--primary);
     background-color: var(--light);
     font-weight: bolder;
 }
