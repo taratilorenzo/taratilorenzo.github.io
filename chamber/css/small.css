@@ -68,7 +68,6 @@ footer{grid-area: FOOTER; background-color: var(--lightbackground);}
     color: var(--accent1);
     border-left:10px solid var(--accent1);
     border-right:10px solid var(--accent1);
-    box-sizing: black;
 }
 
 .main-nav a {
