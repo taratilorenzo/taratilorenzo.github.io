@@ -190,15 +190,15 @@ picture.hero-img img {
 .grid-boxes {
     display: grid;
     gap: 1.25rem;
-    border: 1px solid var(--primary);
-    padding: 0.8rem;
+    /* border: 1px solid var(--primary); */
+    /* padding: 0.8rem; */
 }
 
-.grid-boxes div:nth-child(1){border: 1px solid var(--primary);}
-.grid-boxes div:nth-child(2){border: 1px solid var(--primary);}
-.grid-boxes div:nth-child(3){border: 1px solid var(--primary);}
-.grid-boxes div:nth-child(4){border: 1px solid var(--primary);}
-.grid-boxes div:nth-child(5){border: 1px solid var(--primary);}
+.grid-boxes div:nth-child(1){padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.grid-boxes div:nth-child(2){padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.grid-boxes div:nth-child(3){padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.grid-boxes div:nth-child(4){padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.grid-boxes div:nth-child(5){padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 /* -------------------------------------------- */
 
 /* ------------FOOTER------------------ */
@@ -209,9 +209,16 @@ footer {
     text-align: center;
 }
 
+.name-address {
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1.25rem;
+    align-items: center;
+    justify-items: center;
+}
+
 .name-address .logo {
-    width: 80px;
-    
+    width: 80px;    
 }
 
 .name-address h2 {

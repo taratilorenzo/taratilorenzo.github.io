@@ -24,16 +24,24 @@
 
     
     /*----------- FOOTER --------------*/
-    footer {grid-template-columns: 1fr 1fr;}
+    .name-address {
+        grid-template-columns: 100px 1fr 1fr;
+        justify-items: right;
+        align-items:unset;
+    }
 
-    .name-address {grid-column: 1; display: grid;column-gap: 1.25rem;}
-    .name-address p {grid-column: 2; grid-row: 2; text-align: left;}
-    .name-address h2 {grid-column: 2; grid-row: 1;text-align: left;}   
-    .contact {grid-column: 2; text-align: right;}
-      
-    footer p {grid-column: span 2;}
+    .name-address .logo {
+        width: 100px;    
+    }
+
+    .name-address div h2, .name-address div p {
+        text-align: left;
+    }
+
 
     .contact {
         font-size: 1.1rem;
+        text-align: right;
     }
+
 } /* end of media query */
