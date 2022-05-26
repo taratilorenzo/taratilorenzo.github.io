@@ -177,6 +177,17 @@ header {
 
 .banner-container {display: none;}
 /* --------------------END BANNER----------------- */
+
+picture.hero-img {
+    display: block;
+    width: 96%;
+    margin: 0 2%;
+}
+
+picture.hero-img img {
+    width: 100%;
+}
+
 .grid-boxes {
     display: grid;
     gap: 1.25rem;
