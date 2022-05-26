@@ -18,8 +18,15 @@
 
     .hero {grid-row: 1; grid-column: span 2;}
     .news-release {grid-row: 2; grid-column: span 2;}
-    .spotlight {grid-row: 3; grid-column: span 2; display: flex;}
     .join {grid-row: 4; grid-column: span 2;}
+    .spotlight{
+        grid-row: 3; grid-column: span 2;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.25rem;
+        justify-items: center;
+        align-items: center;
+    }
 
 
     
