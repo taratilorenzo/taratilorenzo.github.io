@@ -17,6 +17,12 @@ header {
     padding: .5rem 2%;
     background-color: #ddd;
 }
+
+header figure {
+    float: left;
+    margin: 0 2% 0 0;
+}
+
 header h1 {margin: 0;}
 header h2 {margin: 0; font-weight: normal;}
 
@@ -59,6 +65,21 @@ main {
     min-height: 10rem;
 }
 
+main figure.my-photo {
+    width: 50%;
+    /* border: 3px solid red; */
+    margin: 0 0 0 2%;
+    float: right;
+}
+
+main figure.my-photo img {
+    width: 100%;
+}
+
+main figure figcaption {
+    font-size: 0.7rem;
+    text-align: center;
+}
 
 /*----------- FOOTER --------------*/
 footer {
