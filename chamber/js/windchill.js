@@ -25,6 +25,7 @@ let speed = mph(parseFloat(document.querySelector(".wind-speed").textContent));
 // console.log(temp);
 // console.log(speed);
 let result = ((35.74 + (0.6215 * temp)) - ((35.75) * (speed ** 0.16)) + (0.4275 * temp * (speed ** 0.16)));
+result = Math.round(celsius(result));
 // console.log(result);
 
 if (temp <= 50 && speed > 3) {
