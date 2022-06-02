@@ -9,16 +9,22 @@ const loadImages = (image) => {
   };
 };
 
+const options = {
+  threshold: 1,
+};
+
 // first we check if the intersection Observer is supported by browser
 if('IntersectionObserver' in window) {
-    const imgObserver = new IntersectionObserver((items, observer) => {
-      items.forEach((item) => {
-        if(item.isIntersecting) {
-          loadImages(item.target);
-          observer.unobserve(item.target);
+  // items is an Array
+    const imgObserver = new IntersectionObserver(entries => {
+      entries.forEach((entry) => {
+        // isIntersecting means show on the screen or specified
+        if(entry.isIntersecting) {
+          loadImages(entry.target);
+          imgObserver.unobserve(entry.target);
         }
       });
-    });
+    }, options);
 
     // loop through each img and check status, and load if necessary
     imagesToLoad.forEach((img) => {
