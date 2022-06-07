@@ -55,7 +55,7 @@ footer{grid-area: FOOTER; background-color: var(--lightbackground);}
 /* ------------ NAVIGATION ----------- */
 .main-nav ul {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     /* gap: 1.25rem; */
     padding: 0;
     background-color: var(--darkbackground1);

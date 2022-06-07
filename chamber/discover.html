@@ -11,8 +11,9 @@
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/discover.css">
 
-  <title>Home</title>
+  <title>Discover</title>
 </head>
 
 <body class="wrapper">
@@ -41,7 +42,8 @@
         <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
       </div>
       <ul id="primary-nav">
-        <li><a class="active" href="index.html">Discover</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="discover.html">Discover</a></li>
         <li><a href="#">Directory</a></li>
         <li><a href="#">Join</a></li>
         <li><a href="#">Contact</a></li>
@@ -51,31 +53,58 @@
   </header>
 
   <main>
-    <h1></h1>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
-    <picture>
-        <img src="" loading="lazy" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas repudiandae laudantium hic odit soluta perspiciatis aliquam deserunt minima autem, molestias veniam modi, perferendis numquam molestiae unde ipsam dolores.</p>
-    </picture>
+    <h1 class="page-title">DISCOVER</h1>
+    <div class="discover-grid">
+      <section class="culture">
+        <h2>New Zealand Culture</h2>
+        <picture>
+          <img src="images/tiki.jpg" alt="tiki">
+        </picture>
+        <p>The island of New Zealand is located in the southwestern region of the Pacific Ocean,  southeast of Australia. New Zealand is a diverse nation, with colonial Western culture influenced by Māori customs and traditions. Before the 1800s, the Māori pre-colonial culture was dominant on the island. The Māori culture developed from Polynesian influences of their traditional lands, and when they arrived on the island we now know as New Zealand in about the 14th century, their culture developed under the influence of their new surroundings. </p>
+      </section>
+      <section class="population">
+        <h2>Population: 4,894,907</h2>
+        <picture>
+          <img src="images/population-2021.png" alt="population">
+        </picture>
+      </section>
+      <section class="ethnicity">
+        <h2>Ethnic Composition</h2>
+        <picture>
+          <img src="images/ethnicity-nz.jpg" alt="ethnicity">
+        </picture>
+      </section>
+
+      <div class="pictures">
+        <picture>
+          <source media="(max-width: 400px)" 
+                  srcset="images/small/all-blacks-small.jpg 400w"/>
+          <source media="(max-width: 650px)" 
+                  srcset="images/medium/all-blacks-medium.jpg 650w"/>
+          <source media="(max-width: 900px)" 
+                  srcset="images/large/all-blacks-large.jpg 900w"/>
+          <img src="images/all-blacks.jpg" loading="lazy" alt="all blacks">
+          <p>Rugby in New Zealand is more than just a game, it forms the sporting backbone of the nation. From grass roots to international super-teams, rugby is supported by passionate kiwi fans.</p>
+        </picture>
+        <picture>
+            <img src="images/hobbiton.jpg" loading="lazy" alt="hobbiton">
+            <p>In 1998, Sir Peter Jackson’s set out to search for a suitable location to become the Movie Set for Hobbiton. When location scouts spotted the Alexander farm from the air, noticing the rolling hills and stunning green pastures, they immediately noted the similarities to The Shire that JRR Tolkien describes in her books.</p>
+        </picture>
+        <picture>
+            <img src="images/auckland-city-bird-eye-view.jpg" loading="lazy" alt="auckland city">
+            <p>Auckland (Māori: Tāmaki Makaurau) is a large metropolitan city in the North Island of New Zealand. The most populous urban area in the country and the fifth largest city in Oceania</p>
+        </picture>
+        <picture>
+            <img src="images/piha.jpg" loading="lazy" alt="piha">
+            <p>Piha is New Zealand's most famous surf beach. Situated on the west coast of the North Island, 40 kms from the city of Auckland, this black iron-sand beach has a reputation for awesome surf which rolls in over the Tasman Sea.</p>
+        </picture>
+        <picture>
+            <img src="images/rotorua-geiser.jpg" loading="lazy" alt="geyser">
+            <p>Chief among the Rotorua geysers is Pohutu, the largest active geyser in the southern hemisphere. Pohutu, which means ‘constant splashing’ in Maori</p>
+        </picture>
+      </div>
+
+    </div>
   </main>
 
   <footer>
