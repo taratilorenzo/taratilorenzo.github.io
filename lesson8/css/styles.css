@@ -1,0 +1,64 @@
+:root{
+    --headandfoot: #7FBAC2;
+    --header: #608CA5;
+    --odds: #E7F0ED;
+    --evens: #E7FFED;
+    --border: #BDC6C3;
+    --shadow: 8px 8px 5px var(--header);
+}
+
+html {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+table {
+    width: 300px;
+    height: 300px;
+    /* border-spacing: 2px; */
+    text-align: center;
+    box-shadow: var(--shadow);
+}
+
+tr, th, td {
+    padding: 6px;
+}
+
+table, th, td{
+    border: 1px solid var(--border);
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: var(--evens);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--odds);
+}
+
+#table-title, #table-footer{
+    background-color: var(--headandfoot);
+}
+
+#table-title {
+    font-size: 25px;
+    font-weight: 400px;
+}
+
+#table-footer{
+    font-size: 12px;
+}
+
+#table-header {
+    background-color: var(--header);
+    color: white;
+}
+
+#black-friday {
+    font-style: italic;
+}
+
+#november td:nth-child(3){
+    background-color: var(--header);
+    color: white;
+}
