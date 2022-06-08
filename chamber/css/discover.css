@@ -22,6 +22,12 @@
     gap: 1.25rem;
 }
 
+.number-visits {
+    grid-column: 1 / span 3;
+    text-align: center;
+    box-shadow:var(--shadow);
+}
+
 .pictures picture {
     display: block;
     padding: 0.8rem;
@@ -32,4 +38,25 @@
     width: 100%;
     height: 300px;
     object-fit: cover;
+}
+
+@media only screen and (max-width: 63rem) {
+   
+    .pictures picture img {
+        height: 200px;
+    }
+
+    p {
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-width: 40rem) {
+    .discover-grid {
+        display: block;
+    }
+
+    .pictures, .culture, .population, .ethnicity {
+        margin: .8rem 0 .8rem 0;
+    }
 }
