@@ -48,7 +48,51 @@
 <!-- CONTENT HERE -->
 <main>
     <h1>Course Proposal Application</h1>
-        
+    <form action="thanks.html" method="get">
+        <fieldset>
+            <legend>Applicant Information</legend>
+            <label class="top">First Name* <input type="text" name="fname" required></label>
+            <label class="top">Last Name* <input type="text" name="lname" required></label>
+            <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+            <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            <label class="top">Website <input type="url" name="url" placeholder="http://"></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Information</legend>
+            <div>Audience</div>
+            <label class="sbs"><input type="radio" name="audience" value="beginner">Beginner</input></label>
+            <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</input></label>
+            <label class="sbs"><input type="radio" name="audience" value="advance">Advance</input></label>
+
+            <div>Software Needed</div>
+            <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</input></label>
+            <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</input></label>
+            <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</input></label>
+            <label class="sbs"><input type="checkbox" name="Client" value="yes">FTP Client</input></label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Funding</legend>
+            <label class="top">Anticipated Completion Date<input type="date" name="completeDate"></input></label>
+            <label class="top">Course Subject
+                <select name="subject">
+                    <option>Please Select &#9662</option>
+                    <option value="software">Software Development</option>
+                    <option value="creative">Creative Professional</option>
+                    <option value="info">Information Technology</option>
+                    <option value="data">Data Professional</option>
+                    <option value="construction">Construction</option>
+                    <option value="manufacturing">Manufacturing</option>
+                    <option value="business">Business Professional</option>
+                    <option value="security">Cyber Security</option>
+                </select>
+            </label>
+            <label class="top">How Many Authors <input type="number" name="authors"></input></label>
+        </fieldset>
+
+        <input type="submit" value="Propose My Course" class="submitBtn">
+    </form>  
 
           
         
