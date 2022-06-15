@@ -1,0 +1,50 @@
+header h1{
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    color: maroon;
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    color: maroon;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    border-radius: 4%;
+    box-shadow: 8px 8px 10px gray;
+    margin-top: 10px;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0.8rem;
+    justify-items: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.cards>section {
+    padding: 0.8rem;
+}
+
+footer {
+
+    text-align: center;
+}
