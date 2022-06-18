@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/5b920e0e6d.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Merriweather&display=swap" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/small.css" rel="stylesheet">
+  <link href="css/medium.css" rel="stylesheet">
+  <link href="css/large.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/discover.css">
+
+  <title>Discover</title>
+</head>
+
+<body class="wrapper">
+  <!-- HEADER -->
+  <header>
+    <div class="chamber">
+      <picture class="logo">
+        <img src="images/logo.webp" alt="logo">
+      </picture>
+      <div>
+        <h1>New Zealand Chamber of Commerce</h1>
+        <h2>We Thrive Together</h2>
+      </div>
+  </div>
+
+    <!-- <div class="icons">
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-2x"></i></a>
+      <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+    </div> -->
+
+    <span id="currentdate"></span>
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav">
+      <div>
+        <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
+      </div>
+      <ul id="primary-nav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="discover.html">Discover</a></li>
+        <li><a class="active" href="directory.html">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <h1 class="page-title">DIRECTORY</h1>
+    <div class="cards"></div>
+  </main>
+
+  <footer>
+    <div class="name-address">
+      <!-- <svg class="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M517.5 309.2c38.8-40 58.1-80 58.5-116.1.8-65.5-59.4-118.2-169.4-135C277.9 38.4 118.1 73.6 0 140.5 52 114 110.6 92.3 170.7 82.3c74.5-20.5 153-25.4 221.3-14.8C544.5 91.3 588.8 195 490.8 299.2c-10.2 10.8-22 21.1-35 30.6L304.9 103.4 114.7 388.9c-65.6-29.4-76.5-90.2-19.1-151.2 20.8-22.2 48.3-41.9 79.5-58.1 20-12.2 39.7-22.6 62-30.7-65.1 20.3-122.7 52.9-161.6 92.9-27.7 28.6-41.4 57.1-41.7 82.9-.5 35.1 23.4 65.1 68.4 83l-34.5 51.7h101.6l22-34.4c22.2 1 45.3 0 68.6-2.7l-22.8 37.1h135.5L340 406.3c18.6-5.3 36.9-11.5 54.5-18.7l45.9 71.8H542L468.6 349c18.5-12.1 35-25.5 48.9-39.8zm-187.6 80.5l-25-40.6-32.7 53.3c-23.4 3.5-46.7 5.1-69.2 4.4l101.9-159.3 78.7 123c-17.2 7.4-35.3 13.9-53.7 19.2z"/></svg> -->
+      <picture class="logo">
+        <img src="images/logo.webp" alt="logo">
+      </picture>
+    
+      <div>
+        <h2>New Zealand Chamber of Commerce</h2>
+        <p>Address line 1
+          City, State Zip</p>
+      </div>
+    
+    
+      <div class="contact">
+        <a href="mailto:carpentercc@ggle.com">carpentercc@ggle.com</a>
+        <a href="tel:+642589654">(+64)2589654</a>
+        <a class="map" href="https://www.google.co.nz/maps/"><i class="fa-solid fa-map-pin"></i>Site Map</a>
+      </div>
+    </div>
+    
+    <p>&copy; <span id="yeartodate"></span> Carpenter Chamber | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+  </footer>
+
+<script src="js/scripts.js"></script>
+<script src="js/cards-company.js"></script>
+</body>
+</html>

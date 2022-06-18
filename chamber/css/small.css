@@ -232,6 +232,32 @@ form label.top input:required:valid {
 }
 /* -------------END FORM-------------- */
 
+/* --------------CARDS--------------- */
+div.cards {
+    display: grid;
+    gap: 1.25rem;
+    padding: 0.8rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+div.cards section {
+    border: 1px solid var(--primary);
+    box-shadow: 8px 8px 10px var(--darkbackground1);
+}
+
+div.cards {
+    text-align: center;
+}
+
+div.cards img {
+    display: block;
+    width: 150px;
+    height: 100px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+/* -------------END CARDS----------- */
+
 picture.hero-img {
     display: block;
     width: 96%;
