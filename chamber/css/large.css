@@ -18,7 +18,17 @@
 
 .current-weather {grid-row: 2; grid-column: 1;}
 .event {grid-row: 1; grid-column: 1;}
-.hero {grid-row: 1 / span 2; grid-column: 2;}
+.hero {
+    grid-row: 1 / span 2;
+    grid-column: 2;
+
+}
+
+.hero img {
+    width: 100%;
+    object-fit: cover;
+}
+
 .news-release {grid-row: 3; grid-column: 2 / span 2;}
 .join {grid-row: 3; grid-column: 1;}
 .spotlight{
