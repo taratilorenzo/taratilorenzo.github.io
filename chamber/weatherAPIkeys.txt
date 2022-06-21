@@ -1,0 +1,5 @@
+api key : f469930a2094b212b1b978211a0dffd1
+
+//api.openweathermap.org/data/2.5/weather?id=2193732&appid=f469930a2094b212b1b978211a0dffd1
+
+auckland Id: 2193732
