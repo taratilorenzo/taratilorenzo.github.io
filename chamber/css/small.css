@@ -223,6 +223,10 @@ form input.submitBtn {
     max-width: 20rem;
 }
 
+form input.submitBtn:hover {
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
 form label.top input:required {
     border-left: red solid 6px;
 }
@@ -352,6 +356,20 @@ picture.hero-img img {
 
 .event, .current-weather, .join, .hero, .news-release, .spotlight, .spotlight-1, .spotlight-2{padding: 0.8rem; text-align:center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
+.join button {
+    border-radius: 5px;
+    width: 50%;
+    height: 50px;
+    box-shadow: 8px 8px 10px var(--accent1);
+}
+
+.join button h2 {
+    margin: 0;
+}
+.join button:hover {
+    color: var(--light);
+    background-color: var(--accent1);
+}
 /* -------------------------------------------- */
 
 /* ------------FOOTER------------------ */

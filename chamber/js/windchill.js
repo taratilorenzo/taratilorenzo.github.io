@@ -27,8 +27,8 @@ fetch(weatherURL)
     .then((weatherInfo) => {
         console.log(weatherInfo);
         document.querySelector(".place").innerHTML = weatherInfo.name;
-        document.querySelector(".temp-celsius").innerHTML = weatherInfo.main.temp;
-        document.querySelector(".wind-speed").innerHTML = weatherInfo.wind.speed;
+        document.querySelector(".temp-celsius").innerHTML = Math.round(celsius(weatherInfo.main.temp));
+        document.querySelector(".wind-speed").innerHTML = Math.round((weatherInfo.wind.speed * 1.609344));
 
         const iconCode = weatherInfo.weather[0].icon;
         const icon_path = "//openweathermap.org/img/w/"+ iconCode +".png";

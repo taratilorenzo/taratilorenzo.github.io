@@ -24,11 +24,6 @@
 
 }
 
-.hero img {
-    width: 100%;
-    object-fit: cover;
-}
-
 .news-release {grid-row: 3; grid-column: 2 / span 2;}
 .join {grid-row: 3; grid-column: 1;}
 .spotlight{
