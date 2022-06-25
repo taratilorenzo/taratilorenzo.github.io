@@ -42,6 +42,9 @@
 
 .spotlight-2{grid-row: 2;}
 
+div.list section  p {
+    font-size: 16px;
+}
 
 /*----------- FOOTER --------------*/
     

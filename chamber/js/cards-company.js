@@ -83,7 +83,7 @@ companies.forEach(displayCompanies);
 function displayCompanies(company) {
     // Create elements to add to the document
     let card = document.createElement('section');
-    let companyName = document.createElement('h2');
+    let companyName = document.createElement('p');
     let address = document.createElement('p');
     let phone = document.createElement('p');
     let logo = document.createElement('img');
@@ -95,8 +95,8 @@ function displayCompanies(company) {
     companyName.textContent = `${company.name}`;
 
     // display date and place of birth
-    address.textContent = `Physical Address: ${company.address}`;
-    phone.textContent = `Contact Number: ${company.phone}`;
+    address.textContent = `${company.address}`;
+    phone.textContent = `${company.phone}`;
     membershipLevel.textContent = `Membership Level: ${company.membershiplevel}`;
     url.textContent = `${company.url}`;
     url.setAttribute("href", company.url);

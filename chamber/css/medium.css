@@ -26,6 +26,18 @@
         gap: 1.25rem;
     }
 
+    div.list section {
+        flex-direction: row;
+    }
+
+    div.list section p {
+        margin: 10px;
+    }
+
+    div.list section  a {
+        align-self: center;
+    }
+
 
     
     /*----------- FOOTER --------------*/

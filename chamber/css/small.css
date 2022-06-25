@@ -57,6 +57,7 @@ footer{grid-area: FOOTER; background-color: var(--lightbackground);}
     grid-template-columns: repeat(5, 1fr);
     /* gap: 1.25rem; */
     padding: 0;
+    margin: 0;
     background-color: var(--darkbackground1);
     list-style-type: none;
     justify-items: center;
@@ -232,6 +233,44 @@ form label.top input:required:valid {
 /* -------------END FORM-------------- */
 
 /* --------------CARDS--------------- */
+
+.icon {
+    width: 100px;
+    height: 40px;
+    margin-left: 50%;
+    display: flex;
+}
+
+.list-layout, .grid-layout {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+}
+
+.list-layout span{
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+}
+
+.list-layout span:nth-child(2){top: 10px;}
+.list-layout span:nth-child(3){top: 20px;}
+
+.grid-layout span {
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+}
+
+.grid-layout span:nth-child(2){ top: 15px;}
+.grid-layout span:nth-child(3){ left: 15px;}
+.grid-layout span:nth-child(4){ top: 15px; left: 15px;}
+
+
 div.cards {
     display: grid;
     gap: 1.25rem;
@@ -255,6 +294,43 @@ div.cards img {
     object-fit: contain;
     margin: 0 auto;
 }
+
+div.list {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+div.list section {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: none;
+    padding: 0.8rem;
+    /* align-items: center; */
+    text-align: left;
+}
+
+div.list section:nth-child(odd) {
+    background-color:#ccc;
+}
+
+div.list section p {
+    /* align-items: center; */
+    text-align: left;
+    margin: 0;;
+}
+
+div.list section  a {
+    font-size: 16px;
+    margin-left: 0;
+}
+
+div.list img {
+    display: none;
+}
+
+div.list p:nth-child(6){display: none;}
+div.list a {margin-left: 10px;}
 /* -------------END CARDS----------- */
 
 picture.hero-img {
