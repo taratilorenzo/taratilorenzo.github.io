@@ -20,7 +20,7 @@ html p {
 
 
 body {
-    margin: 50px 50px;
+    margin: 0;
     line-height: 1.4;
 }
 
@@ -43,7 +43,7 @@ img {
 
 header, main, footer {
     padding: 0.5rem;
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 header{grid-area: HEADER; background-color: var(--lightbackground);}
