@@ -4,7 +4,7 @@ const jsonFile = `[
         "address":"Formerly Progressive Enterprises Ltd, Mangere, Auckland 2024",
         "phone":"+64-9-275 2788",
         "url": "https://www.countdown.co.nz",
-        "icon": "https://vignette.wikia.nocookie.net/logopedia/images/c/c1/Countdown-logo.png/revision/latest?cb=20180627114332",
+        "icon": "images/countdown.jpg",
         "membershiplevel":"Gold"
     },
     {
@@ -12,7 +12,7 @@ const jsonFile = `[
         "address": "Freyberg Building, 20 Aitken Street, Wellington Central, Wellington 6011",
         "phone": "+64-4-496 0999",
         "url": "http://www.nzdf.mil.nz",
-        "icon": "https://www.nzdf.mil.nz/assets/Uploads/PageElements/20190820_NZDF_K1055157_009__FocusFillWzc2NywxMDI0LCJ4IiwzODVd.JPG",
+        "icon": "images/nz-defenceForce.jpg",
         "membershiplevel":"Gold"
     },
     {
@@ -20,7 +20,7 @@ const jsonFile = `[
         "address": "180 Molesworth Street, Wellington Central, Wellington 6011",
         "phone": "+64-4-474 9499",
         "url": "http://www.police.govt.nz",
-        "icon": "https://www.police.govt.nz/sites/all/themes/twbs_police_refresh/images/refresh/nz-police-app-icon.png",
+        "icon": "images/nz-police.jpg",
         "membershiplevel": "Silver"
     },
     {
@@ -28,7 +28,7 @@ const jsonFile = `[
         "address": "26 The Warehouse Way, Northcote, Auckland 0627",
         "phone": "+64-9-489 7000",
         "url": "http://www.thewarehouse.co.nz",
-        "icon": "https://www.thewarehouse.co.nz/on/demandware.static/Sites-twl-Site/-/default/dwae060248/images/header-logo.svg",
+        "icon": "images/wharehouse.jpg",
         "membershiplevel": "Bronze"
     },
     {
@@ -36,7 +36,7 @@ const jsonFile = `[
         "address": "109 Fanshawe Street, Auckland Central, Auckland 1010",
         "phone": "+64-9-374 9000",
         "url": "http://www.fonterra.com",
-        "icon": "https://www.fonterra.com/content/dam/fonterra-public-website/fonterra-global/logos/fonterra-logo-169-140-white.svg",
+        "icon": "images/fonterra.jpg",
         "membership-level": "Silver"
     },
     {
@@ -44,7 +44,7 @@ const jsonFile = `[
         "address": "Building 10 Greenlane Clinic Centre, 214 Green Lane West, Epsom, Auckland 1023",
         "phone": "64-9-367 0000",
         "url": "http://www.adhb.health.nz",
-        "icon": "https://www.adhb.health.nz/assets/Uploads/logo6.png",
+        "icon": "images/auckland-district-health.jpg",
         "membershiplevel": "Gold"
     },
     {
@@ -52,7 +52,7 @@ const jsonFile = `[
         "address": "32 Oxford Terrace, Christchurch 8025",
         "phone": "+64-3-364 4106",
         "url": "http://www.cdhb.health.nz",
-        "icon": "https://scontent.fhlz1-1.fna.fbcdn.net/v/t39.30808-6/272900723_309066404595454_713419316705729_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=pfq_PZ4UU0EAX98ZaIx&_nc_ht=scontent.fhlz1-1.fna&oh=00_AT8xMLS8jAKuKf6FarIqBj9dw_vlHBbQruYUzJeTNKFfXQ&oe=62B27C26",
+        "icon": "images/canterburry-health.jpg",
         "membershiplevel": null
     },
     {
@@ -60,7 +60,7 @@ const jsonFile = `[
         "address": "135 Albert Street, Auckland Central, Auckland 1010",
         "phone": "+64-9-301 0101",
         "url": "http://www.aucklandcouncil.govt.nz",
-        "icon": "https://www.aucklandcouncil.govt.nz/_layouts/15/ACWeb/images/ac-logo-large.svg",
+        "icon": "images/auckland-council.jpg",
         "membershiplevel": "Silver"
     },
     {
@@ -68,7 +68,7 @@ const jsonFile = `[
         "address": "Fletcher House, 810 Great South Road, Penrose, Auckland 1061",
         "phone": "+64-9-525 9000",
         "url": "http://www.fbu.com",
-        "icon": "https://fletcherbuilding.com/themes/default/images/fb-logo.png",
+        "icon": "images/fletcher.jpg",
         "membershiplevel": "Gold"
     }
 ]
