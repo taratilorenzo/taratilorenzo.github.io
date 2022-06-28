@@ -230,12 +230,12 @@ form label.top input:required {
     border-left: red solid 6px;
 }
 
-form label.top input:required:valid {
-    border-left: green solid 6px;
-}
-/* -------------END FORM-------------- */
+form label.top input:required:valid {               
+    border-left: green solid 6px;               
+}               
+/* -------------END FORM-------------- */               
 
-/* --------------CARDS--------------- */
+/* --------------CARDS--------------- */                
 
 .icon {
     width: 100px;
@@ -340,10 +340,13 @@ picture.hero-img {
     display: block;
     width: 96%;
     margin: 0 2%;
+    
+    box-shadow: 8px 8px 5px 10px var(--darkbackground1);
 }
 
 picture.hero-img img {
     width: 100%;
+    border-radius: 5px;
 }
 
 .grid-boxes {
@@ -358,6 +361,10 @@ picture.hero-img img {
     padding: 0.8rem;
     text-align:center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.spotlight-1 {
+    margin-bottom: 20px;
 }
 
 .join button {
@@ -389,20 +396,24 @@ footer {
     /* grid-template-columns:1fr; */
     /* gap: 1.25rem; */
     display: flex;
+    flex-direction: column;
     gap: 1.25rem;
     /* align-items: center; */
     /* justify-items: center; */
 }
 
 .name-address .logo {
-    width: 80px;    
+    width: 80px; 
+    margin: auto;   
 }
 
 .name-address div:nth-child(1) {
     align-items: center;
 }
+
 .name-address h2 {
     /* padding: 0; */
+    margin-top: 0;
     margin-bottom: 0;
 }
 
@@ -414,7 +425,7 @@ footer {
 .contact {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    /* margin-left: auto; */
     align-items: center;
 }
 
@@ -424,5 +435,5 @@ footer {
 }
 
 .map {
-    margin-top: 1.1rem;
+    /* margin-top: 1.1rem; */
 }

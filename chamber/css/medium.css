@@ -26,6 +26,10 @@
         gap: 1.25rem;
     }
 
+    .spotlight-1 {
+        margin-bottom: 0;
+    }
+
     .hero img {
         width: 100%;
         height: 100%;
@@ -48,15 +52,22 @@
     
     /*----------- FOOTER --------------*/
     .name-address {
-        grid-template-columns: 100px 1fr 1fr;
-        justify-items: right;
-        align-items:unset;
+        flex-direction: row;
+        align-items: flex-start;
     }
 
     .name-address .logo {
-        width: 100px;    
+        max-width: 80px;   
     }
 
+    .name-address div {
+        flex: 60%;
+    }
+
+    .name-address div h2 {
+        margin-top: 10px;
+    }
+    
     .name-address div h2, .name-address div p {
         text-align: left;
     }
@@ -64,7 +75,10 @@
 
     .contact {
         font-size: 1.1rem;
-        text-align: right;
+    }
+
+    .contact a {
+        align-self: flex-end;
     }
 
 } /* end of media query */
