@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="description" content="thank you page link to join.html">
+  <meta name="description" content="directory page">
   <script src="https://kit.fontawesome.com/5b920e0e6d.js" crossorigin="anonymous"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,17 +12,17 @@
   <link href="css/small.css" rel="stylesheet">
   <link href="css/medium.css" rel="stylesheet">
   <link href="css/large.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/discover.css">
 
-  <title>Home</title>
+  <title>Contact Us</title>
 </head>
 
 <body class="wrapper">
-
   <!-- HEADER -->
   <header>
     <div class="chamber">
       <picture class="logo">
-        <img src="images/logo.webp">
+        <img src="images/logo.webp" alt="logo">
       </picture>
       <div>
         <h1>New Zealand Chamber of Commerce</h1>
@@ -43,19 +43,42 @@
         <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
       </div>
       <ul id="primary-nav">
-        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="discover.html">Discover</a></li>
         <li><a href="directory.html">Directory</a></li>
         <li><a href="join.html">Join</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
+        <li><a class="active" href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
 
   </header>
 
   <main>
-    <h1>Welcome to the Chamber</h1>
-    <p>Thank you for joining the team. We are all excited to be collaborating with you</p>
+    <div class="contact-grid">
+        <div>
+            <h1 class="page-title">Contact Us</h1>
+            <p>New Zealand Chamber of Commerce</p>
+            <p>31 Sunnyside Road, Auckland New Zealand</p>
+            <p><a href="mailto:carpentercc@ggle.com">carpentercc@ggle.com</a></p>
+            <p><a href="tel:+642589654">(+64)2589654</a></p>
+        </div>
+        <div class="contact-form">
+            <form action="contactyou.html" method="get">
+                <!-- NAME -->
+                <label class="top">Name* <input type="text" name="fname" required></    label>
+                <!-- EMAIL -->
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                <!-- ENQUIRY -->
+                <label for="enquiry" class="top">Enquiry <textarea id="enquiry" name="enquiry"></textarea></label>
+                <!-- BUTTON SUBMIT -->
+                <input type="submit" value="Submit Your Enquiry" class="submitBtn">
+            </form>
+        </div>
+        <div id="map">
+            <img src="images/map.jpg" alt="google map">
+        </div>
+
+    </div>
   </main>
 
   <footer>
@@ -82,6 +105,5 @@
   </footer>
 
 <script src="js/scripts.js"></script>
-<script src="js/windchill.js"></script>
 </body>
 </html>

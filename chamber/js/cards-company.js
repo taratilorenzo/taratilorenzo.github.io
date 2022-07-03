@@ -77,7 +77,6 @@ const companies = JSON.parse(jsonFile);
 // console.log(companies);
 // const cards = document.querySelector(".cards");
 companies.forEach(displayCompanies);
-  
 
 // Function displaying each company
 function displayCompanies(company) {
@@ -117,4 +116,7 @@ function displayCompanies(company) {
   
     // Add/append the existing HTML div with the cards class with the section(card)
     document.querySelector('div.cards').appendChild(card);
-  }
+    document.querySelector('div.spotlight-2').textContent = "dddd";
+    // document.querySelector('div.spotlight-2').appendChild(card);
+}
+
