@@ -25,7 +25,7 @@ const weatherURL = "//api.openweathermap.org/data/2.5/weather?id=2193732&appid=f
 fetch(weatherURL)
     .then((response) => response.json())
     .then((weatherInfo) => {
-        console.log(weatherInfo);
+        // console.log(weatherInfo);
         document.querySelector(".place").innerHTML = weatherInfo.name;
         document.querySelector(".temp-celsius").innerHTML = Math.round(celsius(weatherInfo.main.temp));
         document.querySelector(".wind-speed").innerHTML = Math.round((weatherInfo.wind.speed * 1.609344));

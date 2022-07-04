@@ -1,0 +1,3 @@
+pub_891699ae42c4660eab3b405eba4646ea8442
+
+https://newsdata.io/api/1/news?apikey=pub_891699ae42c4660eab3b405eba4646ea8442&q=pegasus&language=en
