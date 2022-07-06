@@ -1,0 +1,100 @@
+/* CSS Variables and global set up style*/
+:root {
+    --primary: #0d0e0c;
+    --light: #fbfcfc;
+    --accent1: #383F31;
+    --darkbackground1: #25231c;
+    --lightbackground: #ccc;
+    --shadow: 0 2px 5px rgba(104, 104, 104, 0.8)
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+html p { font-family: 'PT Sans', sans-serif; }
+
+
+body {
+    line-height: 1.4;
+}
+
+main {margin: 0 50px 0 50px;}
+
+h1 { font-family: 'Gentium Book Plus', serif; }
+
+h2, h3 {font-family: 'Kanit', sans-serif; }
+
+img { 
+    /* images uses the whole space of its container */
+  max-width: 100%; 
+} 
+/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* ---------------LOGO's-STYLE---------------- */
+.logo {
+    width: 200px;
+}
+
+#facebook-logo, #youtube-logo {
+    width: 48px;
+}
+
+.facebook-list {margin-left: auto;}
+/* ------------END-OF-LOGO's-STYLE------------ */
+
+/* ------------------HEADER----------------- */
+.header-grid {
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+    align-items: center;
+}
+
+/* drawing a line in between the logo and the nav */
+.top-header {
+    border-bottom: 10px solid grey;
+    background-image: url("..//images/header-background-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+    /* NAVIGATION */
+    nav {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    nav ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        padding: 0.05rem;
+        margin: 0;
+        background-color: gainsboro;
+    }
+
+    nav ul li a {
+        padding-right: 1rem;
+        padding-left: 1rem;
+        text-decoration: none;
+        color: black;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bolder;
+    }
+
+    nav ul li a img{
+        padding: 0.1rem;
+    }
+
+    nav ul li a:hover {
+        text-decoration:underline;
+     }
+    /* END-OF-NAVIGATION */
+
+/* --------------END-OF-HEADER-------------- */

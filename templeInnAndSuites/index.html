@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for the temple inn and suites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to my CSS styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google font -->
+    <!-- Kanit is for headings h2 and up
+         Gentium is for H1
+         PT-sans for paragraph -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Kanit:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="templetahiti.ico">
+
+    <title>Home</title>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-grid">
+            <div class="top-header">
+                <!-- LOGO using SRCSET dealing with Pixel Density -->
+                <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="reception.html">Reception</a></li>
+                    <li><a href="missionary.html">Full-time Missionary</a></li>
+                    <!-- SOCIAL MEDIA LOGO -->
+                    <li class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></li>
+                    <li><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- GRID CONTAINER -->
+        <div class="grid-container">
+            <div class="reservation"></div>
+            <div class="weather"></div>
+            <div class="hero"></div>
+            <div class="spotlight"></div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <!-- LOGO -->
+        <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+
+        <!-- QUICK LINKS -->
+        <a href="https://www.churchofjesuschrist.org/comeuntochrist">Our Beliefs</a>
+        <a href="https://www.churchofjesuschrist.org/study/general-conference?lang=eng">General Conference</a>
+        <a href="https://www.familysearch.org/">FamilySearch.org</a>
+        <a href="https://www.churchofjesuschrist.org/manual/come-follow-me?lang=eng">Come, Follow Me Resources</a>
+
+        <!-- COPYRIGHT -->
+        <p>&copy; <span id="yeartodate"></span> Temple Inn and Suites | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src=""></script>
+    
+</body>
+</html>
