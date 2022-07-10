@@ -36,11 +36,18 @@
                 <!-- LOGO using SRCSET dealing with Pixel Density -->
                 <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
                     srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+                <div class="social">
+                    <span class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></span>
+                    <span><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></span>
+                </div>
             </div>
 
             <!-- NAVIGATION -->
             <nav>
-                <ul>
+                <div>
+                    <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
+                </div>
+                <ul id="primary-nav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="temple.html">Temple</a></li>
                     <li><a href="reservation.html">Reservation</a></li>
@@ -49,7 +56,7 @@
                     <li><a href="missionary.html">Full-time Missionary</a></li>
                     <!-- SOCIAL MEDIA LOGO -->
                     <li class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></li>
-                    <li><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
+                    <li class="youtube-list"><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
                 </ul>
             </nav>
         </div>
@@ -59,10 +66,48 @@
     <main>
         <!-- GRID CONTAINER -->
         <div class="grid-container">
-            <div class="reservation"></div>
-            <div class="weather"></div>
-            <div class="hero"></div>
-            <div class="spotlight"></div>
+            <!-- RESERVATION -->
+            <div class="reservation">
+                <h1>Reservation</h1>
+                <button>Book Now</button>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nihil facere. Aliquam quos tenetur animi voluptatum distinctio omnis saepe dolorum. Vitae dignissimos quas voluptatem maxime repellat ab, placeat consectetur consequatur.</p>
+            </div>
+
+            <!-- CURRENT WEATHER -->
+            <div class="current-weather">
+                <h1>Current Weather in <span class="place"></span>, MD</h1>
+                <picture >
+                    <img class="weather-img" src="#" alt="weather icon"/>
+                </picture>
+                <p><span class="temperature"></span>&deg; F</p>
+                <p><span class="description"></span></p>
+                <p>Humidity: <span class="humidity"></span> %</p>
+            </div>
+            <!-- 3 DAYS FORECAST -->
+            
+            <div class="weather-forecast">
+                <h2>3 Days Weather Forecast</h2>
+                <!-- today, tomorrow and afterTomorrow-->
+                <div class="forecast"></div>
+            </div>
+
+            <!-- HERO -->
+            <div class="hero">
+                <h1>The Temple of Tahiti</h1>
+                <a href="http://">more details</a>
+            </div>
+
+            <!-- SPOTLIGHT -->
+            <div class="grid-spotlight">
+                <section class="spotlight-1">
+                    <h1>Spotlight 1</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum dolorum debitis cum? Rem harum molestiae, nihil aut enim pariatur nesciunt eaque magni, quis ut unde velit alias cupiditate perspiciatis?</p>
+                </section>
+                <section class="spotlight-2">
+                    <h1>Spotlight 2</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquid vero in ipsam officia odit ipsa iste quibusdam earum dolor. Amet error similique assumenda nisi, impedit corrupti atque natus obcaecati?</p>
+                </section>
+            </div>
         </div>
     </main>
 
@@ -83,7 +128,8 @@
     </footer>
 
     <!-- SCRIPTS -->
-    <script src=""></script>
+    <script src="js/weather.js"></script>
+    <script src="js/hamburgerBtn.js"></script>
     
 </body>
 </html>

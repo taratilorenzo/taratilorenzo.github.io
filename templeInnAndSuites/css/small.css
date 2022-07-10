@@ -20,12 +20,13 @@ body {
     line-height: 1.4;
 }
 
-main {margin: 0 50px 0 50px;}
+/* main {margin: 0 50px 0 50px;} */
 
 h1 { font-family: 'Gentium Book Plus', serif; }
 
 h2, h3 {font-family: 'Kanit', sans-serif; }
 
+h1, h2, h3 {margin: 0; padding: 0;}
 img { 
     /* images uses the whole space of its container */
   max-width: 100%; 
@@ -60,7 +61,15 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
+    display: flex;
 }
+
+.social {
+    margin-left: auto;
+    padding: 0.8rem;
+}
+
+#primary-nav li.facebook-list, #primary-nav li.youtube-list {display: none;}
 
     /* NAVIGATION */
     nav {
@@ -79,13 +88,16 @@ img {
     }
 
     nav ul li a {
+        display: block;
         padding-right: 1rem;
         padding-left: 1rem;
         text-decoration: none;
         color: black;
-        text-align: center;
+        text-align: left;
         text-transform: capitalize;
         font-weight: bolder;
+        font-size: larger;
+        line-height: 2;
     }
 
     nav ul li a img{
@@ -95,6 +107,67 @@ img {
     nav ul li a:hover {
         text-decoration:underline;
      }
-    /* END-OF-NAVIGATION */
 
+    #hamburger-btn {
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: var(--light);
+        background-color: var(--darkbackground1);
+        width: 100%;
+        padding: 0.8rem;
+        text-align: left;
+    }
+
+    /* JS toggle the menu navigation bar */
+    #primary-nav {display: none;}
+    #primary-nav.open {display: block;}
+    #hamburger-btn span:nth-child(1) {display: block;}
+    #hamburger-btn span:nth-child(2) {display: none;}
+    #hamburger-btn.open span:nth-child(1) {display: none;}
+    #hamburger-btn.open span:nth-child(2) {display: block;}
+    /* END-OF-NAVIGATION */
 /* --------------END-OF-HEADER-------------- */
+
+/* --------------MAIN--------------- */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    /* padding: 0.8rem; */
+}
+
+.hero, .reservation, .spotlight-1, .spotlight-2, .grid-spotlight, .grid-weather, .weather-forecast, .current-weather, .forecast {
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    padding: .8rem;
+}
+
+.hero {
+    background-image: url("..//images/tahiti-temple.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reservation {
+}
+
+.current-weather {
+    text-align: center;
+}
+
+div.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1.25rem;
+    padding: 0;
+    text-align: center;
+}
+
+.weather-forecast h2 {
+    grid-column: 1 / span 3;
+    margin-bottom: 20px;
+}
+
+.grid-spotlight {
+}
+/* -----------END-OF-MAIN----------- */
