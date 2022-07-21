@@ -125,6 +125,11 @@ img {
     #hamburger-btn span:nth-child(2) {display: none;}
     #hamburger-btn.open span:nth-child(1) {display: none;}
     #hamburger-btn.open span:nth-child(2) {display: block;}
+
+    /* active page */
+    #primary-nav a.active {
+        text-decoration:underline;
+    }
     /* END-OF-NAVIGATION */
 /* --------------END-OF-HEADER-------------- */
 
@@ -143,12 +148,14 @@ img {
 }
 
 .hero {
-    background-image: url("..//images/tahiti-temple.jpg");
+    background-image: url("..//images/salt_lake_temple_lds.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 400px;
 }
 
-.reservation {
+.reservation a{
+    text-decoration: none;
 }
 
 .current-weather {
@@ -169,5 +176,280 @@ div.forecast {
 }
 
 .grid-spotlight {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.25rem;
+    padding: 0.8rem;
 }
+
+    /* ------------------TEMPLE CARDS------------------- */
+    .temple-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+        gap: 1.25rem;
+        padding: 0.8rem;
+        box-shadow: var(--shadow);
+    }
+
+    .temple-cards section {
+        box-shadow: var(--shadow);
+        padding: 0.8rem;
+    }
+
+    .temple-cards img {
+        width: 450px;
+        height: 290px;
+        object-fit: cover;
+    }
+    /* -----------END-OF-TEMPLE-CARDS------------------- */
+
+    /* -----------------RESERVATION--------------------- */
+    form fieldset {
+        margin: 2rem 0;
+        border: 1px solid #445ba9;
+        border-radius: 10px;
+        padding: 0.5rem 2%;
+    }
+
+    form legend {
+        color: #445ba9;
+        margin:0 1rem;
+        padding: 0 .5rem;
+    }
+
+    form label.top, form div {
+        display: block;
+        padding-top: 1rem;
+        color: #170454;
+        font-size: 0.8rem;
+    }
+
+    form label.top input, form label.top select, form label.top textarea {
+        -webkit-appearance: none;
+        display: block;
+        font-size: 1rem;
+        border: solid 1px #999;
+        border-radius: 4px;
+        padding: 0.75rem;
+        color: #555;
+        width: 100%;
+        max-width: 20rem;
+        background-color: rgba(0,0,0,0.1);
+    }
+    
+    form label.sbs {
+        display: block;
+        padding: 0.75rem 0;
+        color: #555;
+    }
+    
+    form input.submitBtn {
+        border: none;
+        background-color: #2bb6e4;
+        color: white;
+        border-radius: 1rem;
+        padding: .75rem 1.5rem;
+        margin: 0 0 2rem 2%;
+        width: 96%;
+        max-width: 20rem;
+    }
+    
+    form label.top input:required {
+        border-left: rgb(37, 12, 139) solid 6px;
+    }
+    
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+
+    form div {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 0;
+    }
+
+    form label.book input {
+        width: 50%;
+    }
+    /* ---------END-OF-RESERVATION---------------------- */
+
+    /* -----------SERVICES-------------- */
+    .wrapper {
+        padding: 0.8rem;
+    }
+
+    .wrapper div.reception a {
+        text-decoration: none;
+        font-weight: bolder;
+        font-size: larger;
+        color: #0d0e0c;
+        border: #0d0e0c 1px solid;
+        border-radius: 50px;
+        padding: 0.8rem;
+        box-shadow: var(--shadow);
+        background-color: #2bb6e4;
+    }
+    /* ---------END-OF-SERVICE---------- */
+    
+    /* -------------RECEPTION---------------- */
+    .grid-reception {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.25rem;
+        padding: 0.8rem;
+        box-shadow: var(--shadow);
+        border-radius: 50px;
+    }
+
+    .img-txt-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.25rem;
+        padding: 0.8rem;
+    }
+
+    .accomodationh3 {
+        grid-column: 1 / span 3;
+        grid-row: 1;
+    }
+
+    .accomodationp {
+        grid-column: 1 / span 3;
+        grid-row: 2;
+    }
+    /* --------END-OF-RECEPTION-------------- */
+
+    /* ----------FULL TIME MISSIONARY---------- */
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+    
+    /* Hide the images by default */
+    .mySlides {
+        display: none;
+    }
+     
+    /* Next & previous buttons $ button */
+    .prev, .next{
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .contact {
+        /* cursor: pointer; */
+        font-size: 30px;
+        position: absolute;
+        /* right: 8pxpx; */
+        /* bottom: 8px; */
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact a {
+        text-decoration: none;
+        color: #2bb6e4;
+    }
+  
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    /* @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    } */
+    /* ---------END-OF-FULL-TIME-MISSIONARY---- */
 /* -----------END-OF-MAIN----------- */
+
+/* -----------------FOOTER--------------- */
+.grid-footer {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr;
+    gap: 1.25rem;
+    padding-top: 0.8rem;
+    align-items: center;
+    justify-items: center;
+    background-color: aliceblue;
+}
+
+.quick-links {
+    display: flex;
+    padding:1.25rem;
+    gap: 0.8rem;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #0d0e0c;
+}
+
+.quick-links a:hover {
+    background-color: #2bb6e4;
+}
+
+.grid-footer p {
+    text-align: center;
+}
+/* ------------END-OF-FOOTER------------- */

@@ -24,6 +24,9 @@
     <!-- favicon link -->
     <link rel="shortcut icon" href="templetahiti.ico">
 
+    <!-- fontawesome script -->
+    <script src="https://kit.fontawesome.com/5b920e0e6d.js" crossorigin="anonymous"></script>
+
     <title>Home</title>
 </head>
 
@@ -48,12 +51,11 @@
                     <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
                 </div>
                 <ul id="primary-nav">
-                    <li><a href="index.html">Home</a></li>
+                    <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="temple.html">Temple</a></li>
                     <li><a href="reservation.html">Reservation</a></li>
                     <li><a href="services.html">Services</a></li>
-                    <li><a href="reception.html">Reception</a></li>
-                    <li><a href="missionary.html">Full-time Missionary</a></li>
+
                     <!-- SOCIAL MEDIA LOGO -->
                     <li class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></li>
                     <li class="youtube-list"><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
@@ -69,13 +71,13 @@
             <!-- RESERVATION -->
             <div class="reservation">
                 <h1>Reservation</h1>
-                <button>Book Now</button>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, nihil facere. Aliquam quos tenetur animi voluptatum distinctio omnis saepe dolorum. Vitae dignissimos quas voluptatem maxime repellat ab, placeat consectetur consequatur.</p>
+                <button><a href="reservation.html">Book Now</a></button>
+                <p>Welcome to Temple and Inns Website. We are here to help as much as we can. Please contact us and ask any questions you might have.We are a click away. See you soon.</p>
             </div>
 
             <!-- CURRENT WEATHER -->
             <div class="current-weather">
-                <h1>Current Weather in <span class="place"></span>, MD</h1>
+                <h1>Current Weather in <span class="place"></span>, NZ</h1>
                 <picture >
                     <img class="weather-img" src="#" alt="weather icon"/>
                 </picture>
@@ -93,43 +95,45 @@
 
             <!-- HERO -->
             <div class="hero">
-                <h1>The Temple of Tahiti</h1>
-                <a href="http://">more details</a>
+                <h1>Salt Lake Temple</h1>
+                <a href="https://www.churchofjesuschrist.org/temples/details/salt-lake-temple?lang=eng">more details</a>
             </div>
 
             <!-- SPOTLIGHT -->
             <div class="grid-spotlight">
-                <section class="spotlight-1">
-                    <h1>Spotlight 1</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis illum dolorum debitis cum? Rem harum molestiae, nihil aut enim pariatur nesciunt eaque magni, quis ut unde velit alias cupiditate perspiciatis?</p>
-                </section>
-                <section class="spotlight-2">
-                    <h1>Spotlight 2</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At aliquid vero in ipsam officia odit ipsa iste quibusdam earum dolor. Amet error similique assumenda nisi, impedit corrupti atque natus obcaecati?</p>
-                </section>
+                <div class="spotlight-1"></div>
+                <div class="spotlight-2"></div>
             </div>
         </div>
     </main>
 
     <!-- FOOTER -->
     <footer>
-        <!-- LOGO -->
-        <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
-                srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+        <div class="grid-footer">
+            <!-- LOGO -->
+            <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
 
-        <!-- QUICK LINKS -->
-        <a href="https://www.churchofjesuschrist.org/comeuntochrist">Our Beliefs</a>
-        <a href="https://www.churchofjesuschrist.org/study/general-conference?lang=eng">General Conference</a>
-        <a href="https://www.familysearch.org/">FamilySearch.org</a>
-        <a href="https://www.churchofjesuschrist.org/manual/come-follow-me?lang=eng">Come, Follow Me Resources</a>
+            <div><a class="map" href="https://goo.gl/maps/Z9wUHREebGTCz5EM8" target="_blank"><i class="fa-solid fa-map-pin"></i>HeadQuarters Map</a></div>
 
-        <!-- COPYRIGHT -->
-        <p>&copy; <span id="yeartodate"></span> Temple Inn and Suites | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+            <!-- QUICK LINKS -->
+            <div class="quick-links">
+                <a href="https://www.churchofjesuschrist.org/comeuntochrist">Our    Beliefs</a>
+                <a href="https://www.churchofjesuschrist.org/study/general-conference?  lang=eng">General Conference</a>
+                <a href="https://www.familysearch.org/">FamilySearch.org</a>
+                <a href="https://www.churchofjesuschrist.org/manual/come-follow-me? lang=eng">Come, Follow Me Resources</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p>&copy; <span id="yeartodate"></span> Temple Inn and Suites | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+        </div>
     </footer>
 
     <!-- SCRIPTS -->
     <script src="js/weather.js"></script>
     <script src="js/hamburgerBtn.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/spotlight.js"></script>
     
 </body>
 </html>

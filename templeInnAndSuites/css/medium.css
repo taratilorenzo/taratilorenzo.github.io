@@ -1,0 +1,27 @@
+/* 45em is also 720px (if basefont is 16px) */
+@media only screen and (min-width: 45rem) {
+    /* HEADER */
+
+    /* MAIN */
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid-spotlight {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .weather-forecast {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .current-weather {
+        grid-column: 1 / span 2;
+        grid-row: 2;
+    }
+    
+}

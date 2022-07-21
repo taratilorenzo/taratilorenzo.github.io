@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for the temple inn and suites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to my CSS styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google font -->
+    <!-- Kanit is for headings h2 and up
+         Gentium is for H1
+         PT-sans for paragraph -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Kanit:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="templetahiti.ico">
+
+    <title>Temples</title>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-grid">
+            <div class="top-header">
+                <!-- LOGO using SRCSET dealing with Pixel Density -->
+                <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+                <div class="social">
+                    <span class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></span>
+                    <span><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></span>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav>
+                <div>
+                    <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
+                </div>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+
+                    <!-- SOCIAL MEDIA LOGO -->
+                    <li class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></li>
+                    <li class="youtube-list"><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <form action="mailto:info@w3docs.com" method="get" enctype="text/plain">
+            <fieldset>
+                <legend>Send your comment to us</legend>
+                <label class="top" for="name">Name:
+                    <input type="text" name="name" id="name" />
+                </label>
+                <label class="top" for="email">Email:
+                    <input type="text" name="email" id="email" />
+                </label>
+                <label class="top">Comments:
+                    <textarea name="comments" rows="12"ols="35">Send your comments to us.</textarea>
+                    <label>
+            </fieldset>
+            <input type="submit" name="submit" value="Send" class="submitBtn"/>
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="grid-footer">
+            <!-- LOGO -->
+            <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+
+            <!-- QUICK LINKS -->
+            <div class="quick-links">
+                <a href="https://www.churchofjesuschrist.org/comeuntochrist">Our    Beliefs</a>
+                <a href="https://www.churchofjesuschrist.org/study/general-conference?  lang=eng">General Conference</a>
+                <a href="https://www.familysearch.org/">FamilySearch.org</a>
+                <a href="https://www.churchofjesuschrist.org/manual/come-follow-me? lang=eng">Come, Follow Me Resources</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p>&copy; <span id="yeartodate"></span> Temple Inn and Suites | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/hamburgerBtn.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

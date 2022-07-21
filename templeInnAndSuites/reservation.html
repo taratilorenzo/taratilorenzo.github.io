@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- HEAD -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Home page for the temple inn and suites">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link to my CSS styles -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <!-- Google font -->
+    <!-- Kanit is for headings h2 and up
+         Gentium is for H1
+         PT-sans for paragraph -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gentium+Book+Plus:wght@700&family=Kanit:wght@300&family=PT+Sans&display=swap" rel="stylesheet">
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="templetahiti.ico">
+
+    <title>Reservation</title>
+</head>
+
+<!-- BODY -->
+<body>
+    <!-- HEADER -->
+    <header>
+        <div class="header-grid">
+            <div class="top-header">
+                <!-- LOGO using SRCSET dealing with Pixel Density -->
+                <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+                <div class="social">
+                    <span class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></span>
+                    <span><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></span>
+                </div>
+            </div>
+
+            <!-- NAVIGATION -->
+            <nav>
+                <div>
+                    <button id="hamburger-btn"><span>&#9776; MENU</span><span>X CLOSE</span></button>
+                </div>
+                <ul id="primary-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="temple.html">Temple</a></li>
+                    <li><a class="active" href="reservation.html">Reservation</a></li>
+                    <li><a href="services.html">Services</a></li>
+
+                    <!-- SOCIAL MEDIA LOGO -->
+                    <li class="facebook-list"><a href="https://www.facebook.com/ChurchofJesusChrist/" target="_blank"><img src="images/facebook_icon-icons.com_72pxBy72px.png" alt="facebook logo" id="facebook-logo"></a></li>
+                    <li class="youtube-list"><a href="https://www.youtube.com/churchofjesuschrist" target="_blank"><img src="images/youtube_logo_icon_72pxBy72px.png" alt="youtube logo" id="youtube-logo"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <form action="thanks.html" method="get">
+            <fieldset>
+                <legend>Your Details</legend>
+                <label class="top">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label class="top">Last Name* <input type="text" name="lname" required></label>
+                <label class="top">Phone <input type="tel" name="phone" placeholder="1235551234"></label>
+                <label class="top">Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+            </fieldset>
+    
+            <fieldset>
+                <legend>Reservation Details</legend>
+                <div class="booking-date">
+                    <label class="top book">Check-In Date<input type="date" name="checkInDate"></input></label>
+                    <label class="top book">Check-Out Date<input type="date" name="checkOutDate"></input></label>
+                </div>
+                <label class="top" for="locations">Choose a location:
+                    <select name="locations" id="locations">
+                        <option>Please Select &#9662</option>
+                        <option value="Papeete-Tahiti">Papeete-Tahiti</option>
+                        <option value="England London">England London</option>
+                        <option value="Australia Sydney">Australia Sydney</option>
+                        <option value="New Zealand Hamilton">New Zealand Hamilton</option>
+                    </select>
+                </label>
+                <label class="top" for="customers">How many people:
+                    <input type="number" name="customers" id="customers" placeholder="0">
+                </label>
+                <label class="top" for="comments"> Additional comments:
+                    <textarea name="comments" id="comments" cols="30" rows="10"></textarea>
+                </label>
+            </fieldset>
+    
+            <input type="submit" value="Book Now" class="submitBtn">
+        </form>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="grid-footer">
+            <!-- LOGO -->
+            <img src="images/logo1x.jpg" alt="The Church of Jesus Christ of Latter days Saints logo"    class="logo"
+                    srcset="images/logo1x.jpg 1x, images/logo2x.jpg 2x, images/logo3x.jpg 3x">
+
+            <!-- QUICK LINKS -->
+            <div class="quick-links">
+                <a href="https://www.churchofjesuschrist.org/comeuntochrist">Our    Beliefs</a>
+                <a href="https://www.churchofjesuschrist.org/study/general-conference?  lang=eng">General Conference</a>
+                <a href="https://www.familysearch.org/">FamilySearch.org</a>
+                <a href="https://www.churchofjesuschrist.org/manual/come-follow-me? lang=eng">Come, Follow Me Resources</a>
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p>&copy; <span id="yeartodate"></span> Temple Inn and Suites | <span class="author">Lorenzo J. Tarati</span> | WDD 230 Project | Last Modified: <span id="lastmodifieddate"></span></p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script src="js/hamburgerBtn.js"></script>
+    <script src="js/scripts.js"></script>
+    
+</body>
+</html>

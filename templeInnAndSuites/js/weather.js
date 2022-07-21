@@ -1,4 +1,4 @@
-const weatherURL = "//api.openweathermap.org/data/2.5/weather?id=2655804&appid=f469930a2094b212b1b978211a0dffd1&units=imperial";
+const weatherURL = "//api.openweathermap.org/data/2.5/weather?id=2193732&appid=f469930a2094b212b1b978211a0dffd1&units=imperial";
 
 fetch(weatherURL)
     .then((response) => response.json())
@@ -14,7 +14,7 @@ fetch(weatherURL)
         document.querySelector(".current-weather .weather-img").src = icon_path;
     });
 
-const weatherForecastURL = "//api.openweathermap.org/data/2.5/forecast?id=2655804&appid=f469930a2094b212b1b978211a0dffd1&units=imperial";
+const weatherForecastURL = "//api.openweathermap.org/data/2.5/forecast?id=2193732&appid=f469930a2094b212b1b978211a0dffd1&units=imperial";
 
 const dates = new Array();
 const today = new Date();
@@ -28,7 +28,7 @@ console.log(dates);
 fetch(weatherForecastURL)
     .then((response) => response.json())
     .then((weatherForecastInfo) => {
-    //     console.log(weatherForecastInfo);
+        console.log(weatherForecastInfo);
     let i = 0;
     let list = [0, 8, 16];
     for (let x in list) {
